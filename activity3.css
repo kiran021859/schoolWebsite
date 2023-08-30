@@ -1,0 +1,15 @@
+#drop-area.dragover {
+    background-color: lightgray;
+    color: black;
+  }
+
+  #drop-area {
+    width: 100%;
+    height: 200px;
+    border: 2px dashed gray;
+    border-radius: 10px;
+    text-align: center;
+    padding-top: 50px;
+    font-size: 20px;
+    color: gray;
+  }

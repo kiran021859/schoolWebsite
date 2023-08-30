@@ -1,0 +1,739 @@
+* {margin: 0;
+    padding: 0;
+    box-sizing: border-box;}
+
+    .bubble {
+        border: 10px solid #92d4ea;
+        background-color: #92d4ea;
+        border-radius: 20px;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        margin-left: 100px;
+        margin-right: 100px;
+        padding-bottom: 50px;
+
+        box-shadow: 0 0 10px 5px #48abe0, 0 0 20px 7px #ebecca, 0 0 25px 20px #2d67ca, 0 0 30px 25px #2d67ca;
+    }
+       
+    .landingpage-container {
+        position: relative;
+    }
+
+    .landinglogo {
+        position: absolute;
+        top: 10px;
+        left: 315px;
+    }
+
+    .schoolname{
+        position: absolute;
+        font-size: 65px;
+        top: 200px;
+        left: 50px;
+    }
+
+    .proceed {
+        position: absolute;
+        top: 320px;
+        left: 320px;
+        border-radius: 20px;
+    }
+
+    .admin {
+        position: absolute;
+        top: 320px;
+        left: 520px;
+        border-radius: 20px;
+    }
+
+    .container {
+        width: 100%;
+        height: 100%;
+    }
+
+    .card {
+        overflow: hidden;
+        background-color: #fff;
+        box-shadow: 0 0 30px 5px rgba(0,0,0,0.15);
+        cursor: pointer;
+    }
+
+.card,
+.body-container {
+ position: absolute;
+ top: 20px;
+ left: 0;
+ width: 100%;
+}
+
+.overlay {
+    position: relative;
+    width: 100%;
+    height: 450px;
+    background-color: white;
+    opacity: 1;
+    transition: height linear 0.4s, opacity linear 0.2s;}
+
+    .card:hover .body-container {
+        opacity: 1;
+        height: 25px;
+    }
+
+    .card:hover .card {
+        opacity:0;
+    }
+
+    .body-container{
+        opacity: 0;
+    }
+
+    .event-info {
+        background-color: #fff;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 8px;
+    }
+    
+    #title,
+    #price {
+        color: #18537a;
+        font-size: 1.5em;
+        font-weight: bold;
+        letter-spacing: 1px;
+        margin: 12px;
+    
+    }
+    
+    #info {
+        letter-spacing: 0.5px;
+        margin-bottom: 6px;
+    }
+    
+    #seperator {
+        width: 20%;
+        height: 6px;
+        background-color: #17537a;
+        margin-bottom: 16px;
+    }
+
+    .additional-info {
+        border-top: 1px solid #bbb;
+        margin-top: 12px;
+        padding: 28px;
+        padding-bottom: 0;
+    }
+    
+    .additional-info info {
+        font-size: 0.9em;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    
+    .info i {
+        color: #18537a;
+        font-size: 1.1em;
+        margin-right: 4px;
+    }
+    
+    .info span {
+        color: #18537a;
+        font-weight: bolder;
+    }
+    
+.buttoncontainer {
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+}
+
+.submit {
+    border: none;
+    background: #2d67ca;
+    padding: 12px 30px;
+    border-radius: 30px;
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+    transition: .4s;
+}
+
+.submit:hover {
+
+        transform: scale(1.3);
+        cursor: pointer;
+}
+
+button{border: none;
+    background: #2d67ca;
+    padding: 12px 30px;
+    border-radius: 30px;
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+    transition: .4s;}
+    
+button:hover{
+    transform: scale(1.3);
+    cursor: pointer;
+    
+}
+
+.bookbutton {
+    display: flex;
+    justify-content: center;
+}
+
+
+
+/**content**/
+#content1 {
+    background-color: #71abbe;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-radius: 20px;
+}
+#content2 {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-radius: 20px;
+}
+#content11 {
+    background-color: #71abbe;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-radius: 20px 20px 20px 20px;
+}
+#sub-heading {
+    padding-bottom: 30px;
+}
+#heading1 {  
+    background-image: url(ezgif.com-webp-to-jpg_preview_rev_1_auto_x2.jpg);
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    background-position: center;
+    font-size: 50%;
+    background-repeat: no-repeat;
+    border-radius: 20px 20px 0 0;
+    margin-left: 50px;
+    margin-right: 50px;
+    
+}
+#picture img {
+    height: 19em;
+    width: 21em;
+    
+}
+#aboutustext {
+    margin-left: 1em;
+    margin-right: 1em;
+    border-radius: 40px 40px 25px 25px;
+}
+#biotext {
+    margin-left: 1em;
+    margin-right: 1em;
+    border-radius: 25px 25px 25px 25px;
+}
+
+
+/**header**/
+#heading-text {
+   padding-top:35px;
+   
+
+}
+
+#paragraph {
+    font-size: 17px;
+}
+
+.bg-primary {
+    color: blanchedalmond;
+}
+
+
+
+/**header**/
+#heading-text {
+   padding-top:35px;
+   color: black;
+}
+
+#paragraph {
+    font-size: 20px;
+}
+
+.bg-primary {
+    color: blanchedalmond;
+}
+
+.navbar {
+    border-radius: 0 0 50px 50px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+/**Navbar hover stuff**/
+
+.nav-link[aria-current="page"] {
+    
+    background-color: #2d67ca;
+}
+
+/* Cole */
+/* Cole */
+/* Cole */
+/* Cole */
+.text{ 
+    position: relative; 
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 208px;
+    left: 10px;}
+    
+    .text span {
+        font-size: 35px;
+        padding: 0 10px;
+        text-transform: uppercase;
+        color: black;
+        animation: zoomup 2s linear infinite; 
+        animation-delay: calc(200ms * var(--i));}
+        @keyframes zoomup {
+             0%,
+             100% {color: #00c2ba;
+                 filter: blur(1px); 
+                 text-shadow: 0 0 10px #00c2ba, 0 0 20px #00c2ba, 0 0 30px #00c2ba,
+                  0 0 40px #00c2ba, 0 0 60px #00c2ba, 0 0 80px #00c2ba, 0 0 100px #00c2ba,
+                  0 0 120px #00c2ba;} 
+                  5%, 
+                  95% { filter: blur(0); 
+                    color: olive;
+                     text-shadow: none;}
+                     }
+.main {
+    background-image: url(background.jpg);
+}
+
+.section-container{
+    display: flex;
+    justify-content: center;
+}
+
+.section{
+    display: flex;
+    justify-content: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 25px;
+}
+
+.heading {
+    display: flex;
+    justify-content: center;
+}
+
+/* Styling the area of the slides */
+#slideshow {
+overflow: hidden;
+height: 430x;
+width: 728px;
+margin: 0 auto;
+}
+
+/* Style each of the sides
+with a fixed width and height */
+.slide {
+float: left;
+height: 430px;
+width: 728px;
+display: flex;
+justify-content: center;
+}
+
+/* Add animation to the slides */
+.slide-wrapper {
+
+/* Calculate the total width on the
+basis of number of slides */
+width: calc(728px * 10);
+
+/* Specify the animation with the
+duration and speed */
+animation: slide 20s ease infinite;
+}
+
+/* Define the animation
+for the slideshow */
+@keyframes slide {
+
+/* Calculate the margin-left for
+each of the slides */
+
+10% {
+    margin-left: 0px;
+}
+
+20% {
+    margin-left: calc(-728px * 1);
+}
+
+30% {
+    margin-left: calc(-728px * 2);
+}
+
+40% {
+    margin-left: calc(-728px * 3);
+}
+
+50% {
+    margin-left: calc(-728px * 4);
+
+}
+60% {
+    margin-left: calc(-728px * 5);
+
+}70% {
+    margin-left: calc(-728px * 6);
+
+}
+80% {
+    margin-left: calc(-728px * 7);
+
+}
+90% {
+    margin-left: calc(-728px * 8);
+
+}
+100% {
+    margin-left: calc(-728px * 9);
+
+}
+}
+/*
+.form-container{
+    display: flex;
+    justify-content: center;
+    
+}
+
+.contact{
+    display:flex;
+    justify-self: flex-end;
+    width: 450px;
+    height:700px
+}*/
+
+/* Cole 23March */
+
+.containerContact {
+    /*  background-color: #F8F8F8;*/
+    background-color: #92d4ea;
+      width: 100%;
+      max-width: 100%;
+      padding: 0.5rem;
+      display: block;
+    }
+    
+    .containerContact h2 {
+      margin-bottom: 0.5rem;
+    }
+    
+    .form-control {
+      margin-bottom: 0.25rem;
+      position: relative;
+    }
+    
+    .form-control input {
+      display: block;
+      width: 100%;
+      height: 2rem;
+      padding-left: 0.5rem;
+      background: transparent;
+      border: 0.025rem solid #000000;
+      outline: none;
+      font-size: 0.8125rem;
+      color: #000000;
+    }
+    
+    .form-control input::-webkit-input-placeholder {
+      color: #000000;
+    }
+    
+    .form-control input:-ms-input-placeholder {
+      color: #000000;
+    }
+    
+    .form-control input::-ms-input-placeholder {
+      color: #000000;
+    }
+    
+    .form-control input::placeholder {
+      color: #000000;
+    }
+    
+    .form-control textarea {
+      width: 100%;
+      height: 10rem;
+      background: transparent;
+      border: 0.025rem solid #000000;
+      outline: none;
+      font-family: Arial, Helvetica, sans-serif;
+      padding: 0.5rem;
+      font-size: 0.8125rem;
+      color: #000000;
+      resize: none;
+    }
+    
+    .form-control textarea::-webkit-input-placeholder {
+      color: #000000;
+    }
+    
+    .form-control textarea:-ms-input-placeholder {
+      color: #000000;
+    }
+    
+    .form-control textarea::-ms-input-placeholder {
+      color: #000000;
+    }
+    
+    .form-control textarea::placeholder {
+      color: #000000;
+    }
+    
+    .form-control i {
+      position: absolute;
+      top: 0.5rem;
+      right: 0.5rem;
+      visibility: hidden;
+    }
+    
+    .form-control #textareaChecks {
+      position: absolute;
+      top: 8.5rem;
+      right: 0.5rem;
+    }
+    
+    .form-control.success input {
+      border-color: green;
+    }
+    
+    .form-control.success i.fa-check-circle {
+      visibility: visible;
+      color: green;
+    }
+    
+    .form-control.error input {
+      border-color: red;
+    }
+    
+    .form-control.error i.fa-exclamation-circle {
+      visibility: visible;
+      color: red;
+    }
+    
+    .form-control.success textarea {
+      border-color: green;
+    }
+    
+    .form-control.success i.fa-check-circle {
+      visibility: visible;
+      color: green;
+    }
+    
+    .form-control.error textarea {
+      border-color: red;
+    }
+    
+    .form-control.error i.fa-exclamation-circle {
+      visibility: visible;
+      color: red;
+    }
+    
+    #Error {
+      font-weight: 500;
+      font-size: 0.75rem;
+      font-style: italic;
+      color: red;
+      margin: 0;
+      padding: 0;
+    }
+    
+    #ContactSubmit {
+      margin-left: 590px;
+      width: 160px;
+      padding: 12px 30px;
+      border-radius: 30px;
+      background: #2d67ca;
+      outline: none;
+      border: 0.025rem solid #2d67ca;
+      color: #FFFFFF;
+    }
+    
+    .containerThank {
+      height: 300px;
+      display: -ms-grid;
+      display: grid;
+    }
+    
+    .containerThank h3 {
+      margin: 0;
+      text-align: center;
+      -ms-flex-item-align: end;
+          align-self: flex-end;
+      font-size: 18px;
+      font-weight: bold;
+    }
+    
+    .containerThank p {
+      -ms-flex-item-align: start;
+          align-self: flex-start;
+      text-align: center;
+      font-size: 13px;
+      padding-top: 0.5rem;
+    }
+    
+    .hide {
+      display: none;
+    }
+
+@import url('https://fonts.googleapis.com/css2?family=Akaya+Telivigala&display=swap');
+
+.main_bg{
+    background-image: url(background.jpg);
+    max-width: 1280px;
+    height: 1000px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    
+}
+.form{
+    width: 650px;
+}
+
+.form-text{
+    text-align: center;
+    margin: 0 0 40px 0;
+}
+.form-text h1 span img{
+    margin: 0 10px;
+
+}
+.form-text h1{
+    color: black;
+    font-family: 'Akaya Telivigala', cursive;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+.form-text p{
+    color: black;
+    font-family: 'Akaya Telivigala', cursive;
+    font-size: large;
+}
+
+.main-form div{
+    margin: 10px 10px;
+    width: 300px;
+    display: inline-block;
+}
+.main-form div input {
+    width: 100%;
+    font-family: 'Akaya Telivigala', cursive;
+    background: none;
+    border: 1px solid black;;
+    font-size: 20px;
+    color: black;
+    outline: none;
+    padding: 3px 0 3px 10px;
+    margin-top: 10px;
+}
+.main-form div select{
+    width: 104%;
+    font-family: 'Akaya Telivigala', cursive;
+    background: none;
+    border: 1px solid black;;
+    font-size: 20px;
+    color: black;
+    outline: none;
+    padding: 3px 0 3px 10px;
+    margin-top: 10px;
+}
+.main-form div span{
+    width: 100%;
+    font-family: 'Akaya Telivigala', cursive;
+    color: black;
+    font-size: 25px;
+    justify-content: center;
+}
+
+#back{
+    width: 100%;
+    text-align: center;
+}
+#back input{
+    font-family: 'Akaya Telivigala', cursive;
+    width: 200px;
+    background-color: olive !important;
+    color: black !important;
+    transition: all .3s;
+}
+#back input:hover{
+    font-family: 'Akaya Telivigala', cursive;
+    width: 200px;
+    background-color: black !important;
+    color: #fff !important;
+}
+
+#submit{
+    width: 100%;
+    text-align: center;
+}
+#submit input{
+    font-family: 'Akaya Telivigala', cursive;
+    width: 200px;
+    background-color: olive !important;
+    color: black !important;
+    transition: all .3s;
+}
+#submit input:hover{
+    font-family: 'Akaya Telivigala', cursive;
+    width: 200px;
+    background-color: black !important;
+    color: #fff !important;
+}
+#submit input:active{
+    font-size: 19px;
+    background-color: rgb(46, 20, 5) !important;
+    color: #fff !important;
+}
+
+.comments {
+    width:625px;
+    height: 150px;
+}
+
+
+@media screen and (max-width:710px) {
+    .main-form{
+        text-align: center;
+    }
+}
+
+
+
+.btn-link::after{
+    content: url(minus.png);
+
+
+
+
+   padding-right: 35px;
+}
+.btn-link.collapsed::after{
+    content: url(add.png) ;
+  
+}
+

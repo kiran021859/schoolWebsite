@@ -1,0 +1,87 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="CSSMzamomtshaPrimarySchool.css">
+    <link rel="stylesheet" href="bookit.css">
+    <script defer src="bookit.js"></script>
+</head>
+<body>
+    <div class="container">
+        <form id="form" class="form" onsubmit="sendMsg()">
+            <h1>Book It</h1>
+            <div class="input-control">
+                <label for="name">Name</label>
+                <input id="name" name="name" type="text" class="name">
+                <div class="error"></div>
+            </div>
+            <div class="input-control">
+                <label for="surname">Surname</label>
+                <input id="surname" name="surname" type="text" class="surname">
+                <div class="error"></div>
+            </div>
+            <div class="input-control">
+                <label for="people"> Attending </label>
+                <input id="people" name="people" type="number" min="1" max="4" class="attending">
+                <div class="error"></div>
+            </div>
+            <div class="input-control">
+                <label for="email">Email</label>
+                <input id="email" name="email" type="text" class="email">
+                <div class="error"></div>
+            </div>
+            <div class="input-control">
+                <label for="mobile">Phone Number</label>
+                <input id="mobile" name="mobile" type="number" class="mobile">
+                <div class="error"></div>
+            </div>
+            <div class="input-control">
+                <label for="bio">Comments</label>
+                <textarea id="bio" name="bio" type="text" cols="30" rows="5" class="bio"></textarea>
+                <div class="error"></div>
+                </div>
+                <button type="submit" style="border-radius: 20px; width: 50%; margin-left: 225px;" onclick="sendMsg()">BOOK</button>
+        </form>
+        <div id="thankyou" class="hide">
+            <div class="containerThank">
+            <p id="merci"> </p>
+            <a href="Events.html">
+            <button style="margin-left: 90px;"> OK </button>
+            </a>
+            </div>
+    </div>
+    <script src="bookit.js"> </script>
+    <script src="https://smtpjs.com/v3/smtp.js"> </script>
+
+    <script>
+        const form = document.querySelector('.form');
+        function sendMsg(e){
+            e.preventDefault();
+        const ename = document.getElementById('name');
+        const esurname = document.getElementById('surname');
+        const epeople = document.getElementById('people')
+        const eemail = document.getElementById('email');
+        const emobile = document.getElementById('mobile');
+        const ebio = document.getElementById('bio');
+
+    Email.send({
+    SecureToken : "8369417a-a375-4d27-8f10-b72c1cf1d005",
+    To : 'nathandavids935@gmail.com',
+    From : eemail.value,
+    Subject : "Book It Response",
+    Body : "Name: " + ename.value + "<br>" + "Surname: " + esurname.value + "<br>" + "Attending: " + epeople.value + "<br>" + 
+    "Phone Number: " + emobile.value + "<br>" + "Comment(s): " + ebio.value
+}).then(
+  message => alert(message)
+);
+        }
+
+        form.addEventListner('submit', sendMsg)
+    </script>
+</body>
+</html>
